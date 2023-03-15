@@ -52,8 +52,8 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [student_id=" + student_id + ", name=" + name + ", email=" + email + ", statusCode="
-				+ statusCode + ", status=" + status + "]";
+		return "Student [student_id= " + student_id + ", name= " + name + ", email= " + email + ", statusCode= "
+				+ statusCode + ", status= " + status + "]";
 	}
 
 }
