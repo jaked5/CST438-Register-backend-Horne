@@ -61,8 +61,9 @@ public class EndToEndStudentTest {
 		} while (student != null);
 
 		System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_FILE_LOCATION);
-		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        	ChromeOptions ops = new ChromeOptions();
+        	ops.addArguments("--remote-allow-origins=*");
+       		WebDriver driver = new ChromeDriver(ops);
 
 		try {
 
